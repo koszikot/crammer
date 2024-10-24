@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "VocabMaster",
+  "version": "1.0",
+  "description": "Vocabulary learning extension with spaced repetition",
+  "permissions": ["storage", "alarms"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}

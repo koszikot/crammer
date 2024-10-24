@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>VocabMaster</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="mainMenu">
+      <h2>VocabMaster</h2>
+      <button id="addWord">Add New Word</button>
+      <button id="startReview">Start Review</button>
+      <button id="viewWords">View All Words</button>
+    </div>
+
+    <div id="addWordForm" class="hidden">
+      <h3>Add New Word</h3>
+      <input type="text" id="originalWord" placeholder="Original word">
+      <input type="text" id="translation" placeholder="Translation">
+      <button id="saveWord">Save</button>
+      <button class="backBtn">Back</button>
+    </div>
+
+    <div id="reviewSection" class="hidden">
+      <h3>Review</h3>
+      <div id="wordCard">
+        <p id="wordToReview"></p>
+        <button id="showAnswer">Show Answer</button>
+        <div id="answerSection" class="hidden">
+          <p id="wordAnswer"></p>
+          <div class="ratingButtons">
+            <button data-rating="1">Hard</button>
+            <button data-rating="3">Good</button>
+            <button data-rating="5">Easy</button>
+          </div>
+        </div>
+      </div>
+      <button class="backBtn">Back</button>
+    </div>
+
+    <div id="wordList" class="hidden">
+      <h3>Your Words</h3>
+      <div id="wordListContainer"></div>
+      <button class="backBtn">Back</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
